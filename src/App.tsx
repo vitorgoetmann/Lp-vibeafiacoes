@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { catalog } from "./data/catalog";
 import { generateWhatsAppMessage, formatPhone } from "./utils/whatsapp";
 
