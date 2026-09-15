@@ -1,7 +1,6 @@
 export interface OrderItem {
   id: string;
   name: string;
-  price: number;
   qty: number;
 }
 
@@ -17,19 +16,17 @@ export function generateWhatsAppMessage(
   items: OrderItem[],
   customer: CustomerData
 ): string {
-  const total = items.reduce((sum, i) => sum + i.price * i.qty, 0);
-
   const itemLines = items
     .map(
       (i) =>
-        `• ${i.qty}x ${i.name} — R$ ${(i.price * i.qty).toFixed(2).replace(".", ",")}`
+        `• ${i.qty}x ${i.name}`
     )
     .join("\n");
 
   const message = [
     "Olá, Vibe Afiações! 👋",
     "",
-    "Gostaria de solicitar uma afiação.",
+    "Gostaria de pedir um orçamento para afiação.",
     "",
     `👤 Nome: ${customer.name}`,
     `📱 Telefone: ${customer.phone}`,
@@ -37,11 +34,9 @@ export function generateWhatsAppMessage(
     "🔧 Itens:",
     itemLines,
     "",
-    `💰 Estimativa total: R$ ${total.toFixed(2).replace(".", ",")}`,
-    "",
     customer.note ? `📝 Observação:\n${customer.note}` : "",
     "",
-    "_Os valores são estimativas e podem variar conforme avaliação._",
+    "Aguardo o orçamento.",
   ]
     .filter((line) => line !== undefined)
     .join("\n")
