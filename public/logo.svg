@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Circle background -->
+  <circle cx="100" cy="100" r="97" fill="#eef4fb" stroke="#0f2044" stroke-width="3"/>
+  
+  <!-- Scissors blades (V shape / alicate) at top -->
+  <g fill="#0f2044">
+    <!-- Left blade -->
+    <path d="M78 30 Q70 50 65 75 Q70 72 75 70 Q80 50 88 35 Z" opacity="0.9"/>
+    <!-- Right blade (scissors) -->
+    <path d="M122 30 Q130 50 135 75 Q130 72 125 70 Q120 50 112 35 Z" opacity="0.9"/>
+    <!-- Screw pivot -->
+    <circle cx="100" cy="78" r="4" fill="#0f2044"/>
+  </g>
+  
+  <!-- Horizontal lines -->
+  <line x1="42" y1="88" x2="158" y2="88" stroke="#0f2044" stroke-width="1.5"/>
+  
+  <!-- "Vibe" text -->
+  <text x="55" y="82" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#0f2044" letter-spacing="1">Vibe</text>
+  
+  <!-- Scissors icon inline with "A" -->
+  <path d="M103 96 L110 118 M117 96 L110 118" stroke="#0f2044" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="101" cy="120" r="4" fill="none" stroke="#0f2044" stroke-width="2"/>
+  <circle cx="119" cy="120" r="4" fill="none" stroke="#0f2044" stroke-width="2"/>
+  
+  <!-- "Afiações" text -->
+  <text x="42" y="120" font-family="Georgia, serif" font-size="26" font-weight="bold" fill="#0f2044" letter-spacing="0.5">Afiações</text>
+  
+  <!-- Second horizontal line -->
+  <line x1="42" y1="130" x2="158" y2="130" stroke="#0f2044" stroke-width="1.5"/>
+  
+  <!-- Tagline -->
+  <text x="100" y="152" font-family="Georgia, serif" font-size="10" fill="#0f2044" text-anchor="middle" letter-spacing="3">QUALIDADE E CONFIANÇA</text>
+</svg>
